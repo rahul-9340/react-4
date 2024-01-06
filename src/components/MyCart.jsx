@@ -10,7 +10,7 @@ import { Clear } from "../redux/features/ProductReducer";
 const MyCart = ()=>{
 const[checkout,setcheckout] = useState(false) 
 
-
+let styling = useSelector((state)=>state.Toggle)
 const dispatch = useDispatch()
 const CartDetails= useSelector((state)=>state.Product.AddCart)
 console.log(CartDetails)
