@@ -6,7 +6,9 @@ position: relative;
 
 .main-nav{
 background-color:#000000;
-
+position: sticky;
+top: 0px;
+z-index: 1;
 }
 
 .Navbar{
@@ -211,6 +213,10 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: rgb(42, 44, 43);
   border-radius: 50%;
   transition:ease-in 0.3s;
+  
+}
+.mode:hover{
+  cursor: pointer;
 }
 
 .move{
@@ -230,6 +236,21 @@ transform: translateX(100%);
 
 .pointer{
   cursor: pointer;
+}
+
+
+.icon{
+  color: white;
+ margin: 01px;
+ margin-left: 0px;
+ margin-right: 0px;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
 }
 
 

@@ -11,7 +11,7 @@ const Home = () => {
   const post = useSelector((state) => state.Product.post.products);
   // console.log(post);
 
-  let styling = useSelector((state)=>state.Toggle)
+  let styling = useSelector((state)=>state.Toggle.backgroundColor)
   
   useEffect(()=>{
       dispatch(fetchProducts())
@@ -26,15 +26,15 @@ dispatch(AddCart([items,items.id]))
 
 //.Product.post.products
   return (
-<div className="app" style={styling} >
+<div className="app" style={{backgroundColor:styling}}>
       <Navbar/>
 
 
 
     <div  className="HomePage">
       
-      <h1>All Items</h1>
-
+    <h1>All Items</h1>
+      
 
     <div className = "products-list">
       {post &&

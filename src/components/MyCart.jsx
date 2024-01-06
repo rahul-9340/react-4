@@ -10,12 +10,11 @@ import { Clear } from "../redux/features/ProductReducer";
 const MyCart = ()=>{
 const[checkout,setcheckout] = useState(false) 
 
-let styling = useSelector((state)=>state.Toggle)
+let styling = useSelector((state)=>state.Toggle.backgroundColor)
+console.log(styling)
 const dispatch = useDispatch()
 const CartDetails= useSelector((state)=>state.Product.AddCart)
 console.log(CartDetails)
-
-
 
 const totalPrice = CartDetails.reduce(
     (accumulator, product) => accumulator + (typeof product.price === 'number' ? product.price : 0),
@@ -58,7 +57,7 @@ let count = 1
 
 return(
 
-<div>
+<div style={{backgroundColor:styling}}>
 <Navbar/>
 <h1>My Cart</h1>
 <div className="mycart">
