@@ -255,3 +255,30 @@ transform: translateX(100%);
 
 
 
+
+@media screen and (max-width:700px){
+ .HomePage{
+ display: flex;
+align-items: center;
+
+ }
+
+ .products-list{
+  align-items: center;
+ justify-content: center;
+
+ }
+.product{
+  height: 200px;
+  width: 100px;
+justify-content: space-between;
+}
+.product>p{
+  font-size: 10px;
+}
+.product>p>img{
+ height: 120px;
+ width: 100%;
+}
+
+}
